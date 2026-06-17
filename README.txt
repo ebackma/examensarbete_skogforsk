@@ -1,6 +1,6 @@
 Riparian buffer optimization
 
-This folder contains the cleaned version of the code I used for the thesis work.
+This folder contains the cleaned version of the code we used for the thesis work.
 The purpose of the script is to create variable-width riparian buffers around
 watercourses by balancing ecological value and economic value.
 
@@ -43,7 +43,7 @@ settings file.
 
 3. Python packages needed
 
-I used Python for this, and these packages are needed:
+we used Python for this, and these packages are needed:
 - numpy
 - rasterio
 - scipy
@@ -147,7 +147,7 @@ Each zoom also gets its own folder with separate layers:
 - harvested_area.png
 - watercourse.png
 
-I arranged it like this so it is easier to compare scenarios and also easier to
+wearranged it like this so it is easier to compare scenarios and also easier to
 use the different layers later in figures.
 
 
