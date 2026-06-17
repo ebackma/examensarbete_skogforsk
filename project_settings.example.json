@@ -1,0 +1,56 @@
+{
+  "paths": {
+    "chm_raster": "D:\\KEx\\CHM_Asa.tif",
+    "dtw_raster": "D:\\KEx\\DTW_Asa.tif",
+    "species_raster": "D:\\KEx\\Asa_tree_species_classification_MajFilter3m.tif",
+    "watercourse_shapefile": "D:\\KEx\\Modellerade_Vattendrag_30ha_Bestand_over25ar.shp",
+    "output_dir": "D:\\KEx\\teacher_ready_code\\outputs"
+  },
+  "model": {
+    "resolution_m": 1.0,
+    "max_buffer_width_m": 30.0,
+    "lambda_ecology_weight": 1.0,
+    "mu_boundary_weight": 20.0,
+    "sun_altitude_deg": 30.0,
+    "sun_azimuth_deg": 180.0,
+    "zoom_regions": 4,
+    "scenario_lambdas": {
+      "max_ecology": 0.0,
+      "balanced_low": 1.0,
+      "balanced": 5.0,
+      "balanced_high": 15.0,
+      "max_economy": 50.0
+    }
+  },
+  "species": {
+    "codes": {
+      "1": "broadleaf",
+      "2": "pine",
+      "3": "spruce"
+    },
+    "volume_coefficients": {
+      "broadleaf": 0.0009,
+      "pine": 0.0011,
+      "spruce": 0.0013
+    },
+    "prices_sek_per_m3": {
+      "broadleaf": 380.0,
+      "pine": 520.0,
+      "spruce": 550.0
+    },
+    "ecological_scores": {
+      "broadleaf": 1.0,
+      "pine": 0.55,
+      "spruce": 0.3
+    }
+  },
+  "ecology": {
+    "component_weights": {
+      "dtw": 1.0,
+      "shade": 1.4,
+      "species": 1.0,
+      "proximity": 0.8
+    },
+    "eco_unit_sek": 3.0
+  }
+}
