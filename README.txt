@@ -80,10 +80,6 @@ Run the script:
 
 python run_buffer_optimization.py --config project_settings.json
 
-If running it from the main project folder instead of this subfolder, use:
-
-python teacher_ready_code\run_buffer_optimization.py --config teacher_ready_code\project_settings.json
-
 
 5. Important settings
 
@@ -147,7 +143,7 @@ Each zoom also gets its own folder with separate layers:
 - harvested_area.png
 - watercourse.png
 
-wearranged it like this so it is easier to compare scenarios and also easier to
+we arranged it like this so it is easier to compare scenarios and also easier to
 use the different layers later in figures.
 
 
